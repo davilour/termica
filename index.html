@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Previsão</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./icons/10d.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./icons/01d.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="./script.js"></script>
@@ -18,16 +18,20 @@
   <body>
     <div class="caixa-maior">
       <div>
-        <input placeholder="Cidade" />
-        <button>
+        <input class="input-cidade" placeholder="Cidade" />
+        <button onclick="cliquebotao()">
           <img class="lupa" src="./search.png" />
         </button>
       </div>
       <div class="caixa-media">
-        <h2>Tempo em "Cidade", BR</h2>
-        <p class="temp">22°<span>C</span></p>
+        <h2 class="nomecid">Tempo em "Cidade", BR</h2>
+        <p class="temp">Temp°<span>C</span></p>
 
-        <p class="descricao">Nuvens Dispersas</p>
+        <div class="caixa-menor-ainda">
+        <img class="imgicon" src="./icons/unknown.png" alt="Nuvem">
+        <p class="descricao">Nuvens Mistério</p>
+        </div>
+
         <p class="umidade">Umidade: 70%</p>
       </div>
     </div>
