@@ -34,12 +34,19 @@ async function BuscaCidade(cidade) {
 function cliquebotao() {
   let cidade = document.querySelector(".input-cidade").value;
   BuscaCidade(cidade);
+
+  
 }
 
-document.querySelector(".input-cidade").addEventListener('keypress', enter)
-function enter(event) {
-    key = event.keyCode
-    if (key === 13) {
-        searchResults(document.querySelector('.input-cidade').value)
-    }
+addEventListener("keypress", function(event)
+{
+if (event.key === "Enter") {
+  let cidade = document.querySelector(".input-cidade").value;
+  BuscaCidade(cidade)
+    
 }
+
+})
+
+
+
