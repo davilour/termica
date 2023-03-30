@@ -44,9 +44,19 @@ if (event.key === "Enter") {
   let cidade = document.querySelector(".input-cidade").value;
   BuscaCidade(cidade)
     
+    }
+
 }
 
-})
+/*function cliquetemp(){
+  if(temp.innerHTML == "c"){
+    let f = (temp * 1,8) + 32
+  }
+
+}*/
+
+
+)
 
 
 
